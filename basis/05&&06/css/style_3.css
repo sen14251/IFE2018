@@ -1,0 +1,73 @@
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	font-size: 16px;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+main {
+	width: 960px;
+	background-color: #eee;
+}
+
+.main-body-item h3,
+.main-body-item p {
+	display: inline;
+}
+
+.basis li,
+.contract li {
+	float: left;
+	margin-right: 40px;
+}
+
+.main-title {
+	padding-left: 10px;
+	line-height: 50px;
+	background-color: #666;
+}
+
+.main-body {
+	box-sizing: border-box;
+}
+
+h1 {
+	color: #fff;
+}
+
+.main-body-item h2 {
+	float: left;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: #ccc;
+}
+
+.main-body-item ul {
+	float: left;
+	margin: 0;
+	padding: 10px 0 0 10px;
+	margin-bottom: 1px;
+	width: 860px;
+	height: 100px;
+	background-color: #fff;
+	box-sizing: border-box;
+}

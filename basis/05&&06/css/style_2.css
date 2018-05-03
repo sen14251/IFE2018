@@ -1,0 +1,64 @@
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+h3,
+p {
+	margin: 0;
+	font-size: 16px;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+main{
+	width: 960px;
+	overflow: hidden;
+}
+
+.basis h3,
+.basis p,
+.contract h3,
+.contract p {
+	display: inline;
+}
+
+.basis li,
+.contract li {
+	float: left;
+	margin-right: 40px;
+}
+
+.ability li,
+.edu li,
+.project li {
+	margin-bottom: 20px;
+}
+
+.main-title {
+	float: left;
+	width: 20%;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	background-color: rgb(101, 165, 250);
+}
+.main-body{
+	float: right;
+	width: 80%;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+}
