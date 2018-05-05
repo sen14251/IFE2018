@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-width: 960px;
+	min-height: 100vh;
+}
+
+/* 头部 */
+header {
+	background-color: #333;
+}
+
+header .head {
+	position: relative;
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+	color: #fff;
+}
+header h1{
+	line-height: 70px;
+}
+
+.page-nav {
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+.page-nav li {
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+}
+
+.page-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.page-nav a:hover {
+	color: #fff;
+}
+
+/* 主体 */
+.banner {
+	background-color: #6b3;
+}
+
+.banner-content {
+	position: relative;
+	width: 960px;
+	height: 260px;
+	margin: 0 auto;
+}
+
+.banner-content ul {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+
+.banner-content ul li {
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #000;
+	background-color: #bd9;
+}
+
+.banner-content ul li.active {
+	padding-top: 20px;
+	background-color: #E0F1D6;
+}
+.main-body{
+	padding: 20px 0;
+}
+.main-nav {
+	border-bottom: 1px solid #ccc;
+}
+
+.main-nav ul {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.main-nav li {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 15px 30px;
+	font-size: 16px;
+	background-color: #eee;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.main-nav li.active {
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+
+.main-box {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.main-box .row {
+	width: 100%;
+	display: flex;
+}
+
+.main-content {
+	flex: auto;
+	height: 150px;
+	border: 1px solid #ccc;
+	padding: 75px 0;
+	text-align: center;
+	margin: 10px 10px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row:first-child .main-content:first-child,
+.row:first-child .main-content:nth-child(2) {
+	flex: 1 1 25%;
+}
+
+/* 底部 */
+footer {
+	background-color: #666;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	flex: 1;
+}
