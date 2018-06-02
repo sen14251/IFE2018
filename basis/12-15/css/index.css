@@ -327,12 +327,16 @@ body {
 	background-image: linear-gradient(to top, rgb(25, 145, 235) 0%, rgb(46, 161, 248) 100%);
 }
 
-/*待修改 icon*/
-.tool-content li.warning::after {
-	background-image: -webkit-linear-gradient(to bottom, rgb(244, 84, 56) 0%, rgb(203, 39, 10) 100%);
-	background-image: -moz-linear-gradient(to bottom, rgb(244, 84, 56) 0%, rgb(203, 39, 10) 100%);
-	background-image: -ms-linear-gradient(to bottom, rgb(244, 84, 56) 0%, rgb(203, 39, 10) 100%);
-	background-image: linear-gradient(to bottom, rgb(244, 84, 56) 0%, rgb(203, 39, 10) 100%);
+.tool-content li.warning .icon{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	cursor: default;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .tool-content li.char-1::after {
@@ -343,10 +347,12 @@ body {
 	width: 32px;
 }
 
+.tool-content li:hover,
 .tool-content li.active {
 	color: #fff;
 }
 
+.tool-content li:hover::before,
 .tool-content li.active::before {
 	content: '';
 	display: inline-block;
@@ -643,6 +649,7 @@ body {
 	box-sizing: border-box;
 }
 
+.chats-item:hover::before,
 .chats-item.active::before {
 	content: '';
 	position: absolute;
