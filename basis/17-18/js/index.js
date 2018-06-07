@@ -1,4 +1,4 @@
-let table = document.createElement('table');
+const table = document.createElement('table');
 let inners = '';
 for (let i = 1; i <= 9; i++) {
   inners += '<tr>';
