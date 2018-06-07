@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 16px Arial, "宋体";
+	background-color: #eee;
+}
+
+li {
+	list-style: none;
+}
+
+main {
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+footer {
+	text-align: center;
+	font-size: 12px;
+	line-height: 2;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.basic-info {
+	width: 360px;
+	float: left;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	text-align: center;
+	background-color: #22c3aa;
+}
+
+.me {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 100px auto 20px;
+	border-radius: 50%;
+}
+
+h2.name {
+	margin: 10px 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+	font-size: 30px;
+	color: #fff;
+}
+
+.basic-info p {
+	margin: 5px;
+	font-size: 12px;
+	color: #eee;
+}
+
+.more-info {
+	width: calc(100% - 360px);
+	float: right;
+	padding: 35px;
+	background-color: rgb(241, 238, 232);
+	box-sizing: border-box;
+}
+
+h2 {
+	color: rgb(107, 107, 107);
+}
+
+h3 {
+	color: #22c3aa;
+}
+
+.more-info li {
+	color: rgb(151, 151, 151);
+}
+
+.item,
+.item:not(.expert) li {
+	margin: 10px 0;
+}
