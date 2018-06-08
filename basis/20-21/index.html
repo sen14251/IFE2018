@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>day20-21</title>
+	<style>
+		.wrap{
+			border: 1px solid #ccc;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		select {
+			display: none;
+		}
+		select.active{
+			display: block;
+		}
+
+		.palette {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.palette li {
+			width: 40px;
+			height: 40px;
+			border: 1px solid #000;
+			cursor: pointer;
+		}
+
+		.erik{
+			width: 480px;
+			height: 480px;
+			background: url('img/erik_ce204002.jpg') 0 0 repeat;
+		}
+	</style>
+</head>
+<body>
+	<!--编码一-->
+	<section class="wrap">
+		<input id="name" type="text">
+		<button id="submit-btn">Submit</button>
+	</section>
+
+	<!--编码二-->
+	<section class="wrap">
+		<label>
+			<input id="school" name="status" type="radio">
+			School
+		</label>
+		<label>
+			<input id="company" name="status" type="radio">
+			Company
+		</label>
+
+		<select id="school-select">
+			<option>北京邮电大学</option>
+			<option>黑龙江大学</option>
+			<option>华中科技大学</option>
+		</select>
+
+		<select id="company-select">
+			<option>百度</option>
+			<option>爱奇艺</option>
+		</select>
+	</section>
+
+	<!--编码三四-->
+	<section class="wrap">
+		<ul class="palette">
+			<li style="background-color:crimson"></li>
+			<li style="background-color:bisque"></li>
+			<li style="background-color:blueviolet"></li>
+			<li style="background-color:coral"></li>
+			<li style="background-color:chartreuse"></li>
+			<li style="background-color:darkolivegreen"></li>
+			<li style="background-color:cyan"></li>
+			<li style="background-color:#194738"></li>
+		</ul>
+
+		<p class="color-picker"></p>
+	</section>
+
+	<!--编码五-->
+	<section class="wrap">
+		<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+		<button id="fade-btn">淡出</button>
+	</section>
+
+	<!--编码六-->
+	<section class="wrap">
+		<div class="erik"></div>
+	</section>
+
+	<script src="js/index.js"></script>
+	<script src="live.js"></script>
+</body>
+</html>
