@@ -1,7 +1,16 @@
 /* font */
 @font-face {
 	font-family: 'ProximaNova';
+	font-style: normal;
+	font-weight: normal;
 	src: url('../font/ProximaNova-Regular.otf');
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/ProximaNova-Semibold.otf');
 }
 
 /* 全局变量 */
@@ -94,8 +103,7 @@ body {
 }
 
 .icon {
-	background-image: url('../img/spritesheet.png');
-	background-repeat: no-repeat;
+	background: url('../img/spritesheet.png') no-repeat;
 	display: inline-block;
 	cursor: pointer;
 }
@@ -327,7 +335,7 @@ body {
 	background-image: linear-gradient(to top, rgb(25, 145, 235) 0%, rgb(46, 161, 248) 100%);
 }
 
-.tool-content li.warning .icon{
+.tool-content li.warning .icon {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -658,6 +666,11 @@ body {
 	width: 3px;
 	height: 100%;
 	background-color: #2399f1;
+}
+
+.chats-item .user-avator {
+	width: 46px;
+	height: 46px;
 }
 
 .chats-item .user-name {
