@@ -73,6 +73,24 @@ fadeBtn.addEventListener('click', () => {
       isHidden = !isHidden;
     }
   }, 100);
+
+  /* setTimeout()实现 */
+  /*
+  function change() {
+    opacity += step;
+    fadeObj.style.opacity = opacity;
+    if (opacity <= 0 || opacity >= 1) {
+      clearTimeout(timer);
+      fadeBtn.innerText = txt;
+      fadeBtn.disabled = false;
+      isHidden = !isHidden;
+    } else {
+      timer = setTimeout(change, 100);
+    }
+  }
+
+  let timer = setTimeout(change, 100);
+  */
 });
 
 /* 编码六 */
